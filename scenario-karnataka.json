@@ -1,0 +1,39 @@
+{
+  "scenario": {
+    "id": "DK-FLD-062",
+    "name": "Monsoon response",
+    "region": "Dakshina Kannada, Karnataka",
+    "activatedAt": "2026-11-06T08:20:00+05:30",
+    "status": "SIMULATED",
+    "description": "Demonstration-only flood and access scenario centered on Sullia and Belthangady. Not a real incident feed or dispatch authority."
+  },
+  "villages": [
+    { "id": "sullia", "name": "Sullia", "taluk": "Sullia", "lat": 12.561, "lng": 75.388, "risk": "Safe", "reports": 18, "population": "8,420", "score": 22, "confidence": 99, "reason": "Command post and district response hub are active." },
+    { "id": "aranthodu", "name": "Aranthodu", "taluk": "Sullia", "lat": 12.625, "lng": 75.448, "risk": "Medium", "reports": 2, "population": "2,180", "score": 63, "confidence": 91, "reason": "River-edge access is narrowing; only two incident reports received." },
+    { "id": "kokkada", "name": "Kokkada", "taluk": "Belthangady", "lat": 12.824, "lng": 75.405, "risk": "High", "reports": 0, "population": "3,760", "score": 84, "confidence": 94, "reason": "High flood exposure with no emergency reports in the last 6 hours." },
+    { "id": "subrahmanya", "name": "Subrahmanya", "taluk": "Sullia", "lat": 12.662, "lng": 75.619, "risk": "Medium", "reports": 3, "population": "1,940", "score": 58, "confidence": 88, "reason": "Low-lying approach road is exposed to rising water." },
+    { "id": "ujire", "name": "Ujire", "taluk": "Belthangady", "lat": 12.992, "lng": 75.337, "risk": "High", "reports": 1, "population": "5,230", "score": 76, "confidence": 90, "reason": "Bridge approach is degraded; medical capacity is under pressure." },
+    { "id": "belthangady", "name": "Belthangady", "taluk": "Belthangady", "lat": 12.987, "lng": 75.293, "risk": "High", "reports": 1, "population": "6,080", "score": 72, "confidence": 89, "reason": "Several hamlets depend on a single vulnerable corridor." },
+    { "id": "dharmasthala", "name": "Dharmasthala", "taluk": "Belthangady", "lat": 12.951, "lng": 75.378, "risk": "Critical", "reports": 0, "population": "2,560", "score": 87, "confidence": 96, "reason": "Road closure has cut the eastern approach; verify the silent zone." }
+  ],
+  "roads": [
+    { "id": "r1", "name": "SH-113 · Sullia approach", "from": "sullia", "to": "aranthodu", "status": "open", "note": "Clear · rescue vehicles moving" },
+    { "id": "r2", "name": "Aranthodu–Kokkada link", "from": "aranthodu", "to": "kokkada", "status": "flooded", "note": "Flooded · passable with caution" },
+    { "id": "r3", "name": "Kokkada–Ujire corridor", "from": "kokkada", "to": "ujire", "status": "open", "note": "Open · one-way convoy advised" },
+    { "id": "r4", "name": "Ujire–Belthangady road", "from": "ujire", "to": "belthangady", "status": "open", "note": "Clear · ambulance route" },
+    { "id": "r5", "name": "Belthangady–Dharmasthala bridge", "from": "belthangady", "to": "dharmasthala", "status": "blocked", "note": "Bridge approach washed out" },
+    { "id": "r6", "name": "Sullia–Subrahmanya ghat road", "from": "sullia", "to": "subrahmanya", "status": "open", "note": "Open · slope watch active" }
+  ],
+  "facilities": [
+    { "id": "h1", "name": "Sullia Taluk Hospital", "kind": "hospital", "lat": 12.567, "lng": 75.393 },
+    { "id": "h2", "name": "Ujire Community Health Centre", "kind": "hospital", "lat": 12.999, "lng": 75.329 },
+    { "id": "s1", "name": "Aranthodu Govt. School Shelter", "kind": "shelter", "lat": 12.632, "lng": 75.459 },
+    { "id": "s2", "name": "Ujire Relief Centre", "kind": "shelter", "lat": 12.981, "lng": 75.349 },
+    { "id": "t1", "name": "Rescue team · Alpha 04", "kind": "team", "lat": 12.746, "lng": 75.421 },
+    { "id": "t2", "name": "Rescue team · Bravo 02", "kind": "team", "lat": 12.962, "lng": 75.307 }
+  ],
+  "floodZone": [
+    [12.848, 75.365], [12.866, 75.389], [12.858, 75.424], [12.835, 75.432],
+    [12.810, 75.417], [12.798, 75.385], [12.818, 75.360]
+  ]
+}
